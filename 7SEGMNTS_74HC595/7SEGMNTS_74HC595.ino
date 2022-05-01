@@ -14,14 +14,14 @@ int dataPin = 4;
 //int latchPin = 0;
 //int dataPin = 2;
 
-int numCC[] = {0x3F, 0x06, 0x5B, 0x4F, 0x66, 0x6D, 0x7D, 0x07, 0x7F, 0x6F}; //NUMEROS PARA CATODO COMUN
-int numAC[] = {0x40, 0x79, 0x24, 0x30, 0x19, 0x12, 0x02, 0x78, 0x00, 0x10}; //NUMEROS PARA ANODO COMUN
+int numCC[] = {0x3F, 0x06, 0x5B, 0x4F, 0x66, 0x6D, 0x7D, 0x07, 0x7F, 0x6F}; //NUMEROS PARA CÁTODO COMÚN
+int numAC[] = {0x40, 0x79, 0x24, 0x30, 0x19, 0x12, 0x02, 0x78, 0x00, 0x10}; //NUMEROS PARA ÁNODO COMÚN
 void setup() {
   pinMode(clockPin, OUTPUT);
   pinMode(latchPin, OUTPUT);
   pinMode(dataPin, OUTPUT);
 }
-//Note para 7SEG CC use first low and before high, for AC es alrevez
+//Nota: Para 7SEG Cátodo común "CC" use primero low y después high, for ánodo común "AC" es alrevez
 void loop() {
   for (int i = 0; i<10; i++) {
     digitalWrite(latchPin, LOW);
