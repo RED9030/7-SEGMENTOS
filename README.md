@@ -2,4 +2,4 @@
 
 Uso de un display de 7 segmentos para la mayoria de kits de desarrollo y pic
 
-![7SEGMENTS](IMG/imagen.jpg "7SEGMENTS")
+![7SEGMENTS](IMG/.jpg "7SEGMENTS")
